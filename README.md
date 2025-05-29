@@ -4,8 +4,6 @@ An advanced Flutter application showcasing the power of **Rive animations** comb
 
 ---
 
----
-
 ## 📦 Features
 
 - 🖼️ **Rive Integration** – Use `.riv` files for seamless, real-time animations
@@ -19,25 +17,23 @@ An advanced Flutter application showcasing the power of **Rive animations** comb
 
 ## 📁 Project Structure
 
+```
 lib/
-├── core/ # Shared utilities, constants, services
-├── data/ # Models, data sources, repositories (implementation)
-│ └── datasources/
-│ └── models/
-│ └── repositories/
-├── domain/ # Entities, repository contracts, use cases
-│ └── entities/
-│ └── repositories/
-│ └── usecases/
-├── presentation/ # UI layer: screens, widgets, blocs
-│ └── animations/ # Rive-specific widgets and logic
-│ └── pages/ # pages
-│ └── widgets/ # Shared widgets
-├── main.dart # App entry point
-
-yaml
-Copy
-Edit
+├── core/              # Shared utilities, constants, services
+├── data/              # Models, data sources, repositories (implementation)
+│   ├── datasources/
+│   ├── models/
+│   └── repositories/
+├── domain/            # Entities, repository contracts, use cases
+│   ├── entities/
+│   ├── repositories/
+│   └── usecases/
+├── presentation/      # UI layer: screens, widgets, blocs
+│   ├── animations/    # Rive-specific widgets and logic
+│   ├── pages/
+│   └── widgets/       # Shared widgets
+└── main.dart          # App entry point
+```
 
 ---
 
@@ -48,22 +44,27 @@ Edit
 ```bash
 git clone https://github.com/your-username/flutter-rive-animation-app.git
 cd flutter-rive-animation-app
-2. Install dependencies
-bash
-Copy
-Edit
+```
+
+### 2. Install dependencies
+
+```bash
 flutter pub get
-3. Run the app
-bash
-Copy
-Edit
+```
+
+### 3. Run the app
+
+```bash
 flutter run
-🛠️ Dependencies
+```
+
+---
+
+## 🛠️ Dependencies
+
 Here are the major packages used in the project:
 
-yaml
-Copy
-Edit
+```yaml
 dependencies:
   flutter:
     sdk: flutter
@@ -80,90 +81,89 @@ dev_dependencies:
   json_serializable: ^6.7.1
   flutter_test:
     sdk: flutter
-🧪 Testing
-Unit and widget tests are organized in the test/ directory.
-
-To run tests:
-
-bash
-Copy
-Edit
-flutter test
-🖌️ Working with Rive
-To modify or preview .riv files:
-
-Visit https://rive.app
-
-Create or import an animation
-
-Export the .riv file
-
-Place it in the assets/rive/ directory
-
-Declare it in pubspec.yaml like this:
-
-yaml
-Copy
-Edit
-assets:
-  - assets/rive/
-🧹 Clean Architecture Overview
-This project is inspired by the Uncle Bob’s Clean Architecture principles and adapted to Flutter:
-
-Presentation Layer: UI, widgets, BLoC or Cubit
-
-Domain Layer: Business logic, use cases, entities
-
-Data Layer: Remote/local data handling, repository implementations
-
-Benefits include:
-
-Easier testing and debugging
-
-Maintainable and modular code
-
-Scalable for large teams and codebases
-
-📌 TODO
- Add complete onboarding animation flow
-
- Add integration tests
-
- Setup CI/CD with GitHub Actions
-
- Firebase/Auth integration
-
- Dark mode toggle
-
-🤝 Contributing
-Contributions, issues and feature requests are welcome!
-
-Fork the project
-
-Create your feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a pull request
-
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
-
-👨‍💻 Author
-Amdebirhan Asmamaw
-🔗 GitHub
-📧 your.email@example.com
-
-🌟 Show Your Support
-If you like this project, consider ⭐ starring the repo and sharing it with others!
-
-yaml
-Copy
-Edit
+```
 
 ---
 
-Let me know if you'd like to include CI/CD (GitHub Actions), Firebase integration steps, or international
+## 🧪 Testing
+
+Unit and widget tests are organized in the `test/` directory.
+
+To run tests:
+
+```bash
+flutter test
 ```
+
+---
+
+## 🖌️ Working with Rive
+
+To modify or preview `.riv` files:
+
+1. Visit [https://rive.app](https://rive.app)
+2. Create or import an animation
+3. Export the `.riv` file
+4. Place it in the `assets/rive/` directory
+5. Declare it in `pubspec.yaml` like this:
+
+```yaml
+assets:
+  - assets/rive/
+```
+
+---
+
+## 🧹 Clean Architecture Overview
+
+This project is inspired by the Uncle Bob’s Clean Architecture principles and adapted to Flutter:
+
+- **Presentation Layer**: UI, widgets, BLoC or Cubit
+- **Domain Layer**: Business logic, use cases, entities
+- **Data Layer**: Remote/local data handling, repository implementations
+
+**Benefits include:**
+
+- Easier testing and debugging
+- Maintainable and modular code
+- Scalable for large teams and codebases
+
+---
+
+## 📌 TODO
+
+- [ ] Add complete onboarding animation flow
+- [ ] Add integration tests
+- [ ] Supabase/Auth integration
+- [ ] Dark mode toggle
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a pull request
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+## 👨‍💻 Author
+
+**Amdebirhan Asmamaw**  
+🔗 GitHub: [github.com/amdebirhan](https://github.com/amde-asme-prog)
+
+---
+
+## 🌟 Show Your Support
+
+If you like this project, consider ⭐ starring the repo and sharing it with others!
